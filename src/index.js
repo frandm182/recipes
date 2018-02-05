@@ -1,6 +1,7 @@
-import path from 'path';
+import React from 'react';
+import { render } from 'react-dom';
+import App from './App';
 
-const log = string => {
-    console.log(string);
-}
-log("hola")
+const MOUNT_ELEMENT = document.getElementById('root');
+
+render(<App/>, MOUNT_ELEMENT);
